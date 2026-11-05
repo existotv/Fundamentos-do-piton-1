@@ -1,0 +1,27 @@
+a = float(input('Digite o numero: '))
+
+b = a*a*a
+
+print(b)
+--------------------------------------------------------------------
+a = input('Digite o nome da fruta 1: ')
+b = input('Digite o nome da fruta 2: ')
+c = input('Digite o nome da fruta 3: ')
+
+print(a, '-', b, '-', c)
+--------------------------------------------------------------------
+a = float(input('Digite o primeiro numero: '))
+b = float(input('Digite o segundo numero: '))
+
+print(a, '-', b)
+--------------------------------------------------------------------
+a = 'Python é show'
+b = float(input('Digite o numero: '))
+number = b <= 12
+
+print(a)
+
+print(bool(number))
+
+
+
