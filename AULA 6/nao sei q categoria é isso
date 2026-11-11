@@ -28,3 +28,61 @@ if idade >= 18:
     print('Acesso permitido')
 else:
     print('Menor de idade, acesso negado')
+==========================================================
+
+
+acesso = input('Deseja acessar o banco? sim ou não >> ').lower()
+c = 3
+saldo =  5000.0
+extrato = []
+while acesso == 'sim':
+    
+    for chances in range(3):
+        senha = input('Senha: ')
+        
+        if senha  == '123':
+            
+            print('Seja bem vindo ao bando z')
+            menu =  input('''
+
+                       1 - saque
+                       2 - deposito
+                       3 - extrato
+                       4 - sair
+
+                       ''')
+            if menu == '1':
+                saque_ = float(input('R$ >> '))
+                saldo = saldo - saque_
+                extrato.append(- saque_)
+                print('Em conta', saldo)
+                acesso = input('Deseja continuar? sim ou não >>')
+            elif menu == '2':
+                deposito_ = float(input('R$ >>'))
+                saldo = saldo +  deposito_
+                extrato.append(deposito_)
+                print('Em conta', saldo)
+                acesso = input('Deseja continuar? sim ou não >> ')
+            elif menu =='3':
+                print(extrato)
+                acesso = input('Deseja acessar o banco? sim ou não >>')
+            else:
+                print('OBRIGADA VOLTE SEMPRE... ')
+                break
+                
+                
+                
+            
+        else:
+            c  =  c  - 1
+            print('senha incorreta... ', c, 'você tem chances...')
+            
+            
+    else:
+        print('SENHA BLOQUEADA ENTRE EM CONTATO COM O BANCO')
+        break
+else:
+    print('OBRIGADO VOLTE SEMPRE...')
+        
+    
+
