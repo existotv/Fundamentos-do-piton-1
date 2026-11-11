@@ -10,3 +10,14 @@ else:
     print('Isoceles')
 
 =============================================================
+import time 
+contador = 0
+
+pergunta = input('s/n')
+
+while pergunta == 's':
+    print('contagem', contador)
+    contador  = contador + 1
+    pergunta = input('s/n')
+    time.sleep(4)
+============================================================
