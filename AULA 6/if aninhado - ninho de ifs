@@ -1,0 +1,9 @@
+# if aninhado - ninho de ifs 
+
+if  x > 5:
+    if y > 10:
+        print('teste finalizado')
+
+if x > 5 and y  > 10:
+    print('Teste finalizado')
+    
