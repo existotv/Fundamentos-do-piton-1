@@ -21,3 +21,10 @@ while pergunta == 's':
     pergunta = input('s/n')
     time.sleep(4)
 ============================================================
+
+idade = int(input('Idade >> '))
+
+if idade >= 18:
+    print('Acesso permitido')
+else:
+    print('Menor de idade, acesso negado')
