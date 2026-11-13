@@ -1,0 +1,157 @@
+
+lista  =  [] # vazia
+lista_1 = [1,2,3,6,5.3] # lista
+         # 0 1 2 3 4     5   6 
+         #-7-6-5-4 -3    -2   -1 
+lista_2 = list(range(1,2001,2))
+print(lista)
+print(lista_1)
+# print(lista_2)
+print(lista_1)
+lista_1[1] = 10
+soma =  lista_1[0]  >  lista_1[2]
+print(soma)
+
+
+# inserir dados
+lista_1.append(10)
+lista_1.insert(0,200)
+lista_1 += (30,30,20)
+lista_1.extend([1,2,6])
+
+print(lista_1)
+
+
+# deletar dados
+
+# del lista_1[0]
+# lista_1.remove(3)
+# lista_1.pop()
+# lista_1.pop(0)
+
+# print(dir(lista_1))
+# 
+# print(lista_1)
+
+
+
+# verificar algo 
+
+# tamanho
+print(len(lista_1))
+
+# sum
+print(sum(lista_1))
+
+# max
+print(max(lista_1))
+
+
+# min
+print(min(lista_1))
+
+# copiando a lista
+c =  lista_1.copy()
+print(c)
+
+
+# limpar a lista
+lista_1.clear()
+print(lista)
+=====================================================================
+
+
+lista  =  [] # vazia
+lista_1 = [1,2,3,6,5.3] # lista
+         # 0 1 2 3  4     5   6 
+         #-7-6-5-4 -3    -2   -1 
+lista_2 = list(range(1,2001,2))
+print(lista)
+print(lista_1)
+# print(lista_2)
+print(lista_1)
+lista_1[1] = 10
+soma =  lista_1[0]  >  lista_1[2]
+print(soma)
+
+
+# inserir dados
+lista_1.append(10)
+lista_1.insert(0,200)
+lista_1 += (30,30,20)
+lista_1.extend([1,2,6])
+
+print(lista_1)
+
+
+# deletar dados
+
+# del lista_1[0]
+lista_1.remove(20)
+print(lista_1)
+# lista_1.pop()
+# lista_1.pop(0)
+
+# print(dir(lista_1))
+# 
+# print(lista_1)
+
+
+
+# verificar algo 
+
+# tamanho
+print(len(lista_1))
+
+# sum
+print(sum(lista_1))
+
+# max
+print(max(lista_1))
+
+
+# min
+print(min(lista_1))
+
+# copiando a lista
+c =  lista_1.copy()
+print(c)
+
+
+# limpar a lista
+# lista_1.clear()
+# print(lista)
+
+# contagem
+print(lista_1.count(30))
+
+# index  -  a posição
+print(lista_1.index(5.3))
+
+# ordenar a lista -  organizar a lista
+# lista_1.sort()
+# print(lista_1)
+
+# reverter
+lista_1.reverse()
+print(lista_1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
