@@ -1,0 +1,87 @@
+
+# e-commerce
+acesso = input('Deseja acessar a app? s/n').lower()
+
+while acesso == 's':
+    senha =  input('Senha:')
+    if senha  == '123':
+        print('Seja bem vindo a loja X')
+        carrinho = ['']
+        meu_total= [0]
+        
+       
+        produtos = ['','PC DELL', 'MOUSE LENOVO', 'SSD 512']
+        valores  = [0, 10000.00, 250.55, 350.50]
+            
+        print(f'''
+
+                     Produtos 11/11 black ...
+                  id 
+                  1   {produtos[1]} R$ {valores[1]}
+                  2   {produtos[2]} R$ {valores[2]}
+                  3   {produtos[3]} R$ {valores[3]}               
+                     
+
+                   ''')
+        comprar =  input('Deseja colocar o produto no carrinho? ')
+        
+        if comprar  == 's' or comprar == 'sim' or comprar =='SIM':
+        
+            while comprar  == 'sim':
+            
+
+                produto = int(input('escolha o produto pelo ID 1,2,3 >> '))
+                carrinho.append(produtos[produto])
+                meu_total.append(valores[produto])
+                print('CARRINHO: ', carrinho)
+                print('R$', meu_total)
+                comprar =  input('Deseja continuar comprando? ')
+                
+            else:
+                print('******' * 6)
+                print('CARRINHO')
+                print(carrinho)
+                total =  sum(meu_total)
+                print('R$', total)
+                print('******' * 6)
+                
+                remover_ = input('Deseja remove algo do carrinho? ')
+                if remover_ == 'sim':
+                    produto_remove = int(input('Digite o nome do produto'))
+                    carrinho.pop(produto_remove)
+                    meu_total.pop(produto_remove)
+                    
+                    print('******' * 6)
+                    print('CARRINHO')
+                    print(carrinho)
+                    total =  sum(meu_total)
+                    print('R$', total)
+                    print('******' * 6)
+                    
+                    pg = ['', '1 - pix', '2 - CC', '3 - CD']
+                    forma_pag = int(input(f'escolha a  forma de pagamento, {pg[1:]} >> ' ))
+                    print('R$', total, 'FORMA DE PAGAMENTO -', pg[forma_pag])
+                    acesso = input('Deseja continuar? ... s/n')                    
+                    
+                else:    
+                
+                    pg = ['', '1 - pix', '2 - CC', '3 - CD']
+                    forma_pag = int(input(f'escolha a  forma de pagamento, {pg[1:]} >> ' ))
+                    print('R$', total, 'FORMA DE PAGAMENTO -', pg[forma_pag])
+                    acesso = input('Deseja continuar? ... s/n')
+        else:
+            print('DIGITE ALGO VÁLIDO ...')
+        
+        
+        
+    else:
+        print('SENHA INCORRETA ... ')
+    
+    
+print('Obrigada até logo ... ')
+# acessar a app
+# colocar no corrinho
+# voltar e colocar mais itens
+# pagar/finaliza
+
+
