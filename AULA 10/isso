@@ -1,0 +1,39 @@
+
+
+def acesso(senha):
+    if senha  == '123':
+        return 'Acesso autorizado'
+
+def inserir_nota(nome, quantidade):
+    lista = []
+    print('aluno: ', nome)
+    for n in range(quantidade):
+        nota1 = float(input('1 >>'))
+        lista.extend([nota1])
+        
+    return [lista, nome]
+    
+    
+
+def media(lista):
+    return sum(lista) /len(lista)
+    
+def system():
+    
+    acesso_ = input('Deseja acessar: ')
+    while acesso_ == 'sim':
+          senha = input('Digite a senha: ')
+          print(acesso(senha))
+          if acesso(senha) == 'Acesso autorizado':
+               print('Registre as notas: ')
+               nome =  input('Nome: ')
+               q = int(input('Quantidade Notas'))
+               dados = inserir_nota(nome, q)
+               print(dados[0])
+               media_  =  media(dados[0])
+               print('Media: ', media_, 'aluno(a)',dados[1]  )
+               
+    
+system()        
+    
+    
