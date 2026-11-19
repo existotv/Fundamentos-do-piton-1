@@ -1,0 +1,16 @@
+
+
+try:
+    n =  int(input('>>'))
+    x =  input('>>')
+    r = n +  10
+    print(p)
+except ValueError as erro:
+    print(erro, 'add o input (int/float) dado  de texto')
+    
+except TypeError as erro:
+    print(erro, 'quer calculo com texto')
+
+except NameError  as erro:
+    print(erro, 'Provavelmente vc usa algo que não foi declarado')
+
